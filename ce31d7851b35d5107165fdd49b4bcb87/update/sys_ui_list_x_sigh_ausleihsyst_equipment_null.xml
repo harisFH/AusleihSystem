@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_sigh_ausleihsyst_equipment" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>951af4d51b79d5107165fdd49b4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>191af4d51b79d5107165fdd49b4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>amount</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>991af4d51b79d5107165fdd49b4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>availability</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>1d1af4d51b79d5107165fdd49b4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>9d1af4d51b79d5107165fdd49b4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>111af4d51b79d5107165fdd49b4bcbef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>lender</element>
+            <list_id display_value="x_sigh_ausleihsyst_equipment" element="NULL" name="x_sigh_ausleihsyst_equipment" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d91af4d51b79d5107165fdd49b4bcbed</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_id>911af4d51b79d5107165fdd49b4bcbef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_sigh_ausleihsyst_equipment</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 17:10:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d91af4d51b79d5107165fdd49b4bcbed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sigh_ausleihsyst_equipment</sys_name>
+            <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+            <sys_update_name>sys_ui_list_x_sigh_ausleihsyst_equipment_null</sys_update_name>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 17:10:16</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

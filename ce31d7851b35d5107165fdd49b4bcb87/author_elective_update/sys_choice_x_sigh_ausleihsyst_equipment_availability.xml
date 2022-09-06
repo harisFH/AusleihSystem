@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="availability" table="x_sigh_ausleihsyst_equipment" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>availability</element>
+            <name>x_sigh_ausleihsyst_equipment</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 10:31:47</sys_created_on>
+            <sys_id>f3de5f411b75d5107165fdd49b4bcb23</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>availability</sys_name>
+            <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+            <sys_update_name>sys_choice_x_sigh_ausleihsyst_equipment_availability</sys_update_name>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 10:31:47</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>availability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_sigh_ausleihsyst_equipment</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 12:59:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ac933851bb5d5107165fdd49b4bcb17</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 12:59:33</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>availability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Available</label>
+            <language>en</language>
+            <name>x_sigh_ausleihsyst_equipment</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 10:31:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bfde5f411b75d5107165fdd49b4bcb22</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 12:30:14</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>availability</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rented</label>
+            <language>en</language>
+            <name>x_sigh_ausleihsyst_equipment</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-06 12:59:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3a0c4991bb5d5107165fdd49b4bcb16</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-06 12:59:52</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
