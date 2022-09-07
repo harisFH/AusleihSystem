@@ -112,6 +112,20 @@
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>8</position>
+            <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-07 16:11:19</sys_created_on>
+            <sys_id>5f263da51b7dd510b342dc61ab4bcb3b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_renting" sys_domain="global" view="Default view">8e45f4d11b79d5107165fdd49b4bcbf2</sys_ui_section>
+            <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-07 16:11:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
