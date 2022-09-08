@@ -11,7 +11,7 @@
         <copied_from_name/>
         <description>Der Flow soll eine automatische Notification an User ermöglichen wenn sein Produkt Abholbereit ist und ihn daran errinern das Produkt zurückzugeben, desweiteren soll der Flow das Quittiren regeln </description>
         <internal_name>user_notifications_abholbereit_zurckgabe_und_quittirungen</internal_name>
-        <label_cache>[{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__action_status__","label":"1 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__dont_treat_as_error__","label":"1 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.user","label":"Trigger - Record Created➛Renting Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"user"},{"name":"Created_1.current.datestart","label":"Trigger - Record Created➛Renting Record➛DateStart","reference":"","reference_display":"DateStart","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"datestart"},{"name":"Created_1.current.dateend","label":"Trigger - Record Created➛Renting Record➛DateEnd","reference":"","reference_display":"DateEnd","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"dateend"},{"name":"Created_1.current.equipment.lender","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender","reference":"x_sigh_ausleihsyst_lender","reference_display":"Lender","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"lender"},{"name":"Created_1.current","label":"Trigger - Record Created➛Renting Record","reference":"x_sigh_ausleihsyst_renting","reference_display":"Renting","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.user.email","label":"Trigger - Record Created➛Renting Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.equipment.lender.last_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"last_name"},{"name":"Created_1.current.equipment","label":"Trigger - Record Created➛Renting Record➛Equipment","reference":"x_sigh_ausleihsyst_equipment","reference_display":"Equipment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"equipment"},{"name":"Created_1.current.equipment.lender.first_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"first_name"}]</label_cache>
+        <label_cache>[{"name":"d883afcf-5144-4ff2-aead-359ddca94099.__dont_treat_as_error__","label":"4 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.__action_status__","label":"4 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.email","label":"4 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.equipment.lender.first_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"first_name"},{"name":"Created_1.current.equipment","label":"Trigger - Record Created➛Renting Record➛Equipment","reference":"x_sigh_ausleihsyst_equipment","reference_display":"Equipment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"equipment"},{"name":"Created_1.current.equipment.lender.last_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"last_name"},{"name":"Created_1.current.user.email","label":"Trigger - Record Created➛Renting Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current","label":"Trigger - Record Created➛Renting Record","reference":"x_sigh_ausleihsyst_renting","reference_display":"Renting","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.equipment.lender","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender","reference":"x_sigh_ausleihsyst_lender","reference_display":"Lender","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"lender"},{"name":"Created_1.current.dateend","label":"Trigger - Record Created➛Renting Record➛DateEnd","reference":"","reference_display":"DateEnd","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"dateend"},{"name":"Created_1.current.datestart","label":"Trigger - Record Created➛Renting Record➛DateStart","reference":"","reference_display":"DateStart","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"datestart"},{"name":"Created_1.current.user","label":"Trigger - Record Created➛Renting Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"user"},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__dont_treat_as_error__","label":"1 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__action_status__","label":"1 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.user.last_name","label":"Trigger - Record Created➛Renting Record➛User➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created_1.current.user.first_name","label":"Trigger - Record Created➛Renting Record➛User➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.equipment.name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"name"},{"name":"Created_1.current.sys_updated_by","label":"Trigger - Record Created➛Renting Record➛Updated by","reference":"","reference_display":"Updated by","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"sys_updated_by"},{"name":"Created_1.current.equipment.availability","label":"Trigger - Record Created➛Renting Record➛Equipment➛Availability","reference":"","reference_display":"Availability","type":"choice","base_type":"choice","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"availability","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"label":"Available","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Available","value":"1","parameters":{"name":"x_sigh_ausleihsyst_equipment"}},{"used":false,"label":"Pending","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Pending","value":"0","parameters":{"name":"x_sigh_ausleihsyst_equipment"}},{"used":false,"label":"Rented","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Rented","value":"2","parameters":{"name":"x_sigh_ausleihsyst_equipment"}}]}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <name>User Notifications: Abholbereit</name>
@@ -30,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>59f8e56d1b3dd510b342dc61ab4bcb7c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>User Notifications: Abholbereit</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_hub_flow_59f8e56d1b3dd510b342dc61ab4bcb7c</sys_update_name>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 10:35:06</sys_updated_on>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
@@ -53,10 +53,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>403832a11b311910b342dc61ab4bcb25</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 10:35:06</sys_updated_on>
+        <sys_updated_on>2022-09-08 17:15:50</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -284,7 +284,185 @@
     </sys_hub_flow_input>
     <sys_hub_flow_output action="delete_multiple" query="model=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN943832a11b311910b342dc61ab4bcb2e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN094dfaf11bf91910b342dc61ab4bcbfd,5cc547791bf91910b342dc61ab4bcb8e,943832a11b311910b342dc61ab4bcb2e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:00:23</sys_created_on>
+        <sys_id>094dfaf11bf91910b342dc61ab4bcbfd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:50</sys_updated_on>
+        <ui_id>97f0a082-5ab9-4bd2-b876-69d8369bbbd8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=094dfaf11bf91910b342dc61ab4bcbfd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>094dfaf11bf91910b342dc61ab4bcbfd</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:00:23</sys_created_on>
+        <sys_id>814d3ef11bf91910b342dc61ab4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 16:00:23</sys_updated_on>
+        <value>x_sigh_ausleihsyst_renting</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>094dfaf11bf91910b342dc61ab4bcbfd</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:00:23</sys_created_on>
+        <sys_id>8d4dfaf11bf91910b342dc61ab4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 16:00:23</sys_updated_on>
+        <value>dateendRELATIVEGT@dayofweek@ahead@2</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=094dfaf11bf91910b342dc61ab4bcbfd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>094dfaf11bf91910b342dc61ab4bcbfd</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:00:23</sys_created_on>
+        <sys_id>494dfaf11bf91910b342dc61ab4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 16:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>094dfaf11bf91910b342dc61ab4bcbfd</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:00:23</sys_created_on>
+        <sys_id>854dfaf11bf91910b342dc61ab4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 16:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>094dfaf11bf91910b342dc61ab4bcbfd</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:00:23</sys_created_on>
+        <sys_id>0d4dfaf11bf91910b342dc61ab4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 16:00:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=094dfaf11bf91910b342dc61ab4bcbfd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=094dfaf11bf91910b342dc61ab4bcbfd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
+        <order>4</order>
+        <parent_ui_id>9bb5c52d-e31e-48ff-951e-e7005e1817f0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:37:29</sys_created_on>
+        <sys_id>5cc547791bf91910b342dc61ab4bcb8e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <ui_id>d883afcf-5144-4ff2-aead-359ddca94099</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5cc547791bf91910b342dc61ab4bcb8e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5cc547791bf91910b342dc61ab4bcb8e</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>5e8ec7fd1bf91910b342dc61ab4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <value>Produkt Rückgabe</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5cc547791bf91910b342dc61ab4bcb8e</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>9a8ec7fd1bf91910b342dc61ab4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5cc547791bf91910b342dc61ab4bcb8e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>5cc547791bf91910b342dc61ab4bcb8e</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>568ec7fd1bf91910b342dc61ab4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Sehr geehrte Herr &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b2135631-1781-4b0a-ac16-6feabf40d0ba}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; User &amp;gt; Last name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Last name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_b2135631-1781-4b0a-ac16-6feabf40d0ba" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:fcbe4610-68f2-46d6-a292-222233d6d2a1}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; User &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_fcbe4610-68f2-46d6-a292-222233d6d2a1" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp; &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:fcbe4610-68f2-46d6-a292-222233d6d2a1}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; User &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_fcbe4610-68f2-46d6-a292-222233d6d2a1" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Denken Sie bitte dran ihr ausgelihenes Produkt:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:8d77fa99-0e3a-40df-818e-be66de09a93f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:8d77fa99-0e3a-40df-818e-be66de09a93f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_8d77fa99-0e3a-40df-818e-be66de09a93f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp; vor dem&amp;nbsp; &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:7c38f65b-f1d0-432c-80da-2c27a03f6b5d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:7c38f65b-f1d0-432c-80da-2c27a03f6b5d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; DateEnd"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;DateEnd&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_7c38f65b-f1d0-432c-80da-2c27a03f6b5d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; z&amp;uuml;ruck zu geben!&lt;br /&gt;&lt;br /&gt;MfG, &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:0f665b63-ef28-411e-88cb-aa1a7e6c909f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:0f665b63-ef28-411e-88cb-aa1a7e6c909f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Lender &amp;gt; Last name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Last name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0f665b63-ef28-411e-88cb-aa1a7e6c909f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d69879dc-0cbe-441b-9410-89e98c361b1d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Lender &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_d69879dc-0cbe-441b-9410-89e98c361b1d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>5cc547791bf91910b342dc61ab4bcb8e</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>1a8ec7fd1bf91910b342dc61ab4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>5cc547791bf91910b342dc61ab4bcb8e</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 16:37:29</sys_created_on>
+        <sys_id>9cc547791bf91910b342dc61ab4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 16:37:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5cc547791bf91910b342dc61ab4bcb8e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5cc547791bf91910b342dc61ab4bcb8e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -300,10 +478,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>943832a11b311910b342dc61ab4bcb2e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 10:35:06</sys_updated_on>
+        <sys_updated_on>2022-09-08 17:15:50</sys_updated_on>
         <ui_id>9f89d3dc-61ce-451c-ba77-ad2f98d6743e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=943832a11b311910b342dc61ab4bcb2e"/>
@@ -376,8 +554,97 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=943832a11b311910b342dc61ab4bcb2e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=943832a11b311910b342dc61ab4bcb2e"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
-    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN143832a11b311910b342dc61ab4bcb35,5c3832a11b311910b342dc61ab4bcb35,983832a11b311910b342dc61ab4bcb35,d43832a11b311910b342dc61ab4bcb35,d83832a11b311910b342dc61ab4bcb34"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN1a8e87fd1bf91910b342dc61ab4bcbec"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">da8e87fd1bf91910b342dc61ab4bcbeb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:50</sys_created_on>
+        <sys_id>1a8e87fd1bf91910b342dc61ab4bcbec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:50</sys_updated_on>
+        <ui_id>9bb5c52d-e31e-48ff-951e-e7005e1817f0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1a8e87fd1bf91910b342dc61ab4bcbec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1a8e87fd1bf91910b342dc61ab4bcbec</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>1a8e87fd1bf91910b342dc61ab4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <value>Status is rented</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1a8e87fd1bf91910b342dc61ab4bcbec"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1a8e87fd1bf91910b342dc61ab4bcbec</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>968e87fd1bf91910b342dc61ab4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.equipment.availability}}=2</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>1a8e87fd1bf91910b342dc61ab4bcbec</id>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>de8e87fd1bf91910b342dc61ab4bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1a8e87fd1bf91910b342dc61ab4bcbec"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1a8e87fd1bf91910b342dc61ab4bcbec"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN128ec7fd1bf91910b342dc61ab4bcb04,143832a11b311910b342dc61ab4bcb35,168ec7fd1bf91910b342dc61ab4bcb03,5c3832a11b311910b342dc61ab4bcb35,5e8ec7fd1bf91910b342dc61ab4bcb03,968ec7fd1bf91910b342dc61ab4bcb04,983832a11b311910b342dc61ab4bcb35,9a8ec7fd1bf91910b342dc61ab4bcb03,d28ec7fd1bf91910b342dc61ab4bcb04,d43832a11b311910b342dc61ab4bcb35,d68ec7fd1bf91910b342dc61ab4bcb03,d83832a11b311910b342dc61ab4bcb34,da8ec7fd1bf91910b342dc61ab4bcb02"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.equipment.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>128ec7fd1bf91910b342dc61ab4bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8d77fa99-0e3a-40df-818e-be66de09a93f</ui_id>
+    </sys_hub_pill_compound>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
         <extra_info/>
@@ -394,6 +661,23 @@
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>4bae61f1-15ab-4d28-993b-8c3281bba664</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.user}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>168ec7fd1bf91910b342dc61ab4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>36861d0f-14c4-41e0-b5ff-454948daff21</ui_id>
     </sys_hub_pill_compound>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
@@ -416,6 +700,40 @@
         <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
         <extra_info/>
         <order>0</order>
+        <prescription>{{Created_1.current.user.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>5e8ec7fd1bf91910b342dc61ab4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>fcbe4610-68f2-46d6-a292-222233d6d2a1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.equipment.lender.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>968ec7fd1bf91910b342dc61ab4bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d69879dc-0cbe-441b-9410-89e98c361b1d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
         <prescription>{{Created_1.current.equipment}}</prescription>
         <source_ui_id/>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
@@ -428,6 +746,40 @@
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>e900a173-1d6f-474b-b587-4c7fcc94a235</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.user.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>9a8ec7fd1bf91910b342dc61ab4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b2135631-1781-4b0a-ac16-6feabf40d0ba</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.equipment.lender.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>d28ec7fd1bf91910b342dc61ab4bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0f665b63-ef28-411e-88cb-aa1a7e6c909f</ui_id>
     </sys_hub_pill_compound>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
@@ -450,6 +802,23 @@
         <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
         <extra_info/>
         <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>d68ec7fd1bf91910b342dc61ab4bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f6b32f3d-6e1f-4522-bd86-02d26eff0054</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
         <prescription>{{Created_1.current.datestart}}</prescription>
         <source_ui_id/>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
@@ -462,6 +831,23 @@
         <transform_compositions>[]</transform_compositions>
         <transform_definition_id/>
         <ui_id>f99cbaf4-cd8b-497e-8501-79e4464eed52</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>59f8e56d1b3dd510b342dc61ab4bcb7c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.dateend}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-08 17:15:51</sys_created_on>
+        <sys_id>da8ec7fd1bf91910b342dc61ab4bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-08 17:15:51</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7c38f65b-f1d0-432c-80da-2c27a03f6b5d</ui_id>
     </sys_hub_pill_compound>
     <sys_hub_flow_variable action="delete_multiple" query="model=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN0c3832a11b311910b342dc61ab4bcb1e,4c3832a11b311910b342dc61ab4bcb22"/>
