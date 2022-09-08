@@ -126,6 +126,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>returned</element>
+            <position>9</position>
+            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+            <sys_created_on>2022-09-08 12:34:53</sys_created_on>
+            <sys_id>ee3e46711b791910b342dc61ab4bcb08</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_renting" sys_domain="global" view="Default view">8e45f4d11b79d5107165fdd49b4bcbf2</sys_ui_section>
+            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+            <sys_updated_on>2022-09-08 12:34:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
