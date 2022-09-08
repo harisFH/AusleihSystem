@@ -11,10 +11,10 @@
         <copied_from_name/>
         <description>Der Flow soll eine automatische Notification an User ermöglichen wenn sein Produkt Abholbereit ist und ihn daran errinern das Produkt zurückzugeben, desweiteren soll der Flow das Quittiren regeln </description>
         <internal_name>user_notifications_abholbereit_zurckgabe_und_quittirungen</internal_name>
-        <label_cache>[{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__action_status__","label":"1 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__dont_treat_as_error__","label":"1 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.user","label":"Trigger - Record Created➛Renting Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"user"},{"name":"Created_1.current.datestart","label":"Trigger - Record Created➛Renting Record➛DateStart","reference":"","reference_display":"DateStart","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"datestart"},{"name":"Created_1.current.dateend","label":"Trigger - Record Created➛Renting Record➛DateEnd","reference":"","reference_display":"DateEnd","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"dateend"},{"name":"Created_1.current.equipment.lender","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender","reference":"x_sigh_ausleihsyst_lender","reference_display":"Lender","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"lender"},{"name":"Created_1.current","label":"Trigger - Record Created➛Renting Record","reference":"x_sigh_ausleihsyst_renting","reference_display":"Renting","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.user.email","label":"Trigger - Record Created➛Renting Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.equipment.lender.last_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"last_name"},{"name":"Created_1.current.equipment","label":"Trigger - Record Created➛Renting Record➛Equipment","reference":"x_sigh_ausleihsyst_equipment","reference_display":"Equipment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"equipment"},{"name":"Created_1.current.equipment.lender.first_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"first_name"}]</label_cache>
+        <label_cache>[{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__action_status__","label":"1 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__dont_treat_as_error__","label":"1 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.user","label":"Trigger - Record Created➛Renting Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"user"},{"name":"Created_1.current.datestart","label":"Trigger - Record Created➛Renting Record➛DateStart","reference":"","reference_display":"DateStart","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"datestart"},{"name":"Created_1.current.dateend","label":"Trigger - Record Created➛Renting Record➛DateEnd","reference":"","reference_display":"DateEnd","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"dateend"},{"name":"Created_1.current.equipment.lender","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender","reference":"x_sigh_ausleihsyst_lender","reference_display":"Lender","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"lender"},{"name":"Created_1.current","label":"Trigger - Record Created➛Renting Record","reference":"x_sigh_ausleihsyst_renting","reference_display":"Renting","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.user.email","label":"Trigger - Record Created➛Renting Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.equipment.lender.last_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"last_name"},{"name":"Created_1.current.equipment","label":"Trigger - Record Created➛Renting Record➛Equipment","reference":"x_sigh_ausleihsyst_equipment","reference_display":"Equipment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"equipment"},{"name":"Created_1.current.equipment.lender.first_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"first_name"}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
-        <name>User Notifications: Abholbereit, Zurückgabe und Quittirungen</name>
+        <name>User Notifications: Abholbereit</name>
         <natlang/>
         <outputs/>
         <remote_trigger_id/>
@@ -30,15 +30,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>59f8e56d1b3dd510b342dc61ab4bcb7c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>User Notifications: Abholbereit, Zurückgabe und Quittirungen</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>User Notifications: Abholbereit</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_hub_flow_59f8e56d1b3dd510b342dc61ab4bcb7c</sys_update_name>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-07 20:59:44</sys_updated_on>
+        <sys_updated_on>2022-09-08 10:35:06</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
@@ -47,16 +47,16 @@
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="User Notifications: Abholbereit, Zurückgabe und Quittirungen">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
+        <flow display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
         <name>Created</name>
         <remote_sys_id/>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>403832a11b311910b342dc61ab4bcb25</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-07 20:59:44</sys_updated_on>
+        <sys_updated_on>2022-09-08 10:35:06</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -71,10 +71,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>043832a11b311910b342dc61ab4bcb26</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-07 20:59:44</sys_updated_on>
-        <value>status=0</value>
+        <sys_updated_on>2022-09-08 09:37:38</sys_updated_on>
+        <value>^EQ</value>
         <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -159,7 +159,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="User Notifications: Abholbereit, Zurückgabe und Quittirungen">59f8e56d1b3dd510b342dc61ab4bcb7c</model>
+        <model display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</model>
         <model_id>59f8e56d1b3dd510b342dc61ab4bcb7c</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_59f8e56d1b3dd510b342dc61ab4bcb7c</name>
@@ -240,7 +240,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="User Notifications: Abholbereit, Zurückgabe und Quittirungen">59f8e56d1b3dd510b342dc61ab4bcb7c</model>
+        <model display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</model>
         <model_id>59f8e56d1b3dd510b342dc61ab4bcb7c</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_59f8e56d1b3dd510b342dc61ab4bcb7c</name>
@@ -293,17 +293,17 @@
         <comment>Email wird gesendet an den User dass sein Produkt Abholbereit ist</comment>
         <compiled_snapshot/>
         <display_text/>
-        <flow display_value="User Notifications: Abholbereit, Zurückgabe und Quittirungen">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
+        <flow display_value="User Notifications: Abholbereit">59f8e56d1b3dd510b342dc61ab4bcb7c</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>943832a11b311910b342dc61ab4bcb2e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-07 20:59:44</sys_updated_on>
+        <sys_updated_on>2022-09-08 10:35:06</sys_updated_on>
         <ui_id>9f89d3dc-61ce-451c-ba77-ad2f98d6743e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=943832a11b311910b342dc61ab4bcb2e"/>
@@ -478,7 +478,7 @@
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>0c3832a11b311910b342dc61ab4bcb1e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
@@ -501,7 +501,7 @@
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>4c3832a11b311910b342dc61ab4bcb22</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
