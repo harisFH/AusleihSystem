@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	c.onLogin =function () {
+		
+	console.log('logged');
+		
+		
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #F5F5DC;  
+}  
+button {   
+       background-color: #BC8F8F;   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid #BC8F8F;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: white;  
+    }   </css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>login_testing</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Login Testing</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	var user= new GlideRecord ('sys_user');
+	user.addQuery('sys_id', gs.getUserID());
+	user.query();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-09 18:27:27</sys_created_on>
+        <sys_id>4988ac121bf95910b342dc61ab4bcb5a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Login Testing</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sp_widget_4988ac121bf95910b342dc61ab4bcb5a</sys_update_name>
+        <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-09 19:11:07</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+      <center> <h1> Ausleihe Login </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit" ng-click= "c.onLogin()">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+          
+        </div>   
+    </form>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>
