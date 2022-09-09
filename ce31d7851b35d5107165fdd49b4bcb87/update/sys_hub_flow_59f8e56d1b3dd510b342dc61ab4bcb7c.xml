@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -10,25 +10,25 @@
         <copied_from_name/>
         <description>Der Flow soll eine automatische Notification an User ermöglichen wenn sein Produkt Abholbereit ist und ihn daran errinern das Produkt zurückzugeben, desweiteren soll der Flow das Quittiren regeln </description>
         <internal_name>user_notifications_abholbereit_zurckgabe_und_quittirungen</internal_name>
-        <label_cache>[{"name":"d883afcf-5144-4ff2-aead-359ddca94099.__dont_treat_as_error__","label":"4 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.__action_status__","label":"4 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.email","label":"4 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.equipment.lender.first_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"first_name"},{"name":"Created_1.current.equipment","label":"Trigger - Record Created➛Renting Record➛Equipment","reference":"x_sigh_ausleihsyst_equipment","reference_display":"Equipment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"equipment"},{"name":"Created_1.current.equipment.lender.last_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"last_name"},{"name":"Created_1.current.user.email","label":"Trigger - Record Created➛Renting Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current","label":"Trigger - Record Created➛Renting Record","reference":"x_sigh_ausleihsyst_renting","reference_display":"Renting","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.equipment.lender","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender","reference":"x_sigh_ausleihsyst_lender","reference_display":"Lender","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"lender"},{"name":"Created_1.current.dateend","label":"Trigger - Record Created➛Renting Record➛DateEnd","reference":"","reference_display":"DateEnd","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"dateend"},{"name":"Created_1.current.datestart","label":"Trigger - Record Created➛Renting Record➛DateStart","reference":"","reference_display":"DateStart","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"datestart"},{"name":"Created_1.current.user","label":"Trigger - Record Created➛Renting Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"user"},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__dont_treat_as_error__","label":"1 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__action_status__","label":"1 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.user.last_name","label":"Trigger - Record Created➛Renting Record➛User➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created_1.current.user.first_name","label":"Trigger - Record Created➛Renting Record➛User➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.equipment.name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"name"},{"name":"Created_1.current.sys_updated_by","label":"Trigger - Record Created➛Renting Record➛Updated by","reference":"","reference_display":"Updated by","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"sys_updated_by"},{"name":"Created_1.current.equipment.availability","label":"Trigger - Record Created➛Renting Record➛Equipment➛Availability","reference":"","reference_display":"Availability","type":"choice","base_type":"choice","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"availability","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"label":"Available","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Available","value":"1","parameters":{"name":"x_sigh_ausleihsyst_equipment"}},{"used":false,"label":"Pending","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Pending","value":"0","parameters":{"name":"x_sigh_ausleihsyst_equipment"}},{"used":false,"label":"Rented","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Rented","value":"2","parameters":{"name":"x_sigh_ausleihsyst_equipment"}}]},{"name":"Created_1.current.user.title","label":"Trigger - Record Created➛Renting Record➛User➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"title"}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.user.title","label":"Trigger - Record Created➛Renting Record➛User➛Title","reference":"","reference_display":"Title","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"title"},{"name":"Created_1.current.equipment.availability","label":"Trigger - Record Created➛Renting Record➛Equipment➛Availability","reference":"","reference_display":"Availability","type":"choice","base_type":"choice","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"availability","choices":[{"label":"-- None --","used":false,"image":"","reference":false,"selected":false,"missing":false,"rawLabel":"-- None --","value":""},{"used":false,"label":"Available","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Available","value":"1","parameters":{"name":"x_sigh_ausleihsyst_equipment"}},{"used":false,"label":"Pending","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Pending","value":"0","parameters":{"name":"x_sigh_ausleihsyst_equipment"}},{"used":false,"label":"Rented","image":"","reference":false,"selected":false,"missing":false,"rawLabel":"Rented","value":"2","parameters":{"name":"x_sigh_ausleihsyst_equipment"}}]},{"name":"Created_1.current.sys_updated_by","label":"Trigger - Record Created➛Renting Record➛Updated by","reference":"","reference_display":"Updated by","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"sys_updated_by"},{"name":"Created_1.current.equipment.name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"name"},{"name":"Created_1.current.user.first_name","label":"Trigger - Record Created➛Renting Record➛User➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.user.last_name","label":"Trigger - Record Created➛Renting Record➛User➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"97f0a082-5ab9-4bd2-b876-69d8369bbbd8.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"befd68ca-1e6f-40d8-8472-0cc67b2986c6.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__action_status__","label":"1 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1970d784-93e1-4196-a395-f7a0d495384f.__dont_treat_as_error__","label":"1 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f89d3dc-61ce-451c-ba77-ad2f98d6743e.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.user","label":"Trigger - Record Created➛Renting Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"user"},{"name":"Created_1.current.datestart","label":"Trigger - Record Created➛Renting Record➛DateStart","reference":"","reference_display":"DateStart","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"datestart"},{"name":"Created_1.current.dateend","label":"Trigger - Record Created➛Renting Record➛DateEnd","reference":"","reference_display":"DateEnd","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"dateend"},{"name":"Created_1.current.equipment.lender","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender","reference":"x_sigh_ausleihsyst_lender","reference_display":"Lender","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_equipment","column_name":"lender"},{"name":"Created_1.current","label":"Trigger - Record Created➛Renting Record","reference":"x_sigh_ausleihsyst_renting","reference_display":"Renting","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.user.email","label":"Trigger - Record Created➛Renting Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.equipment.lender.last_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"last_name"},{"name":"Created_1.current.equipment","label":"Trigger - Record Created➛Renting Record➛Equipment","reference":"x_sigh_ausleihsyst_equipment","reference_display":"Equipment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_ausleihsyst_renting","column_name":"equipment"},{"name":"Created_1.current.equipment.lender.first_name","label":"Trigger - Record Created➛Renting Record➛Equipment➛Lender➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_sigh_ausleihsyst_lender","column_name":"first_name"},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.email","label":"4 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.__action_status__","label":"4 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d883afcf-5144-4ff2-aead-359ddca94099.__dont_treat_as_error__","label":"4 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>42285ff51b3d1910b342dc61ab4bcb6d</master_snapshot>
         <name>User Notifications: Abholbereit, Rückgabe</name>
         <natlang/>
         <outputs/>
-        <remote_trigger_id>969897391b3d1910b342dc61ab4bcb67</remote_trigger_id>
+        <remote_trigger_id>84e481821b715910b342dc61ab4bcbd4</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 15:13:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>59f8e56d1b3dd510b342dc61ab4bcb7c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>User Notifications: Abholbereit, Rückgabe</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_hub_flow_59f8e56d1b3dd510b342dc61ab4bcb7c</sys_update_name>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:43:58</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
@@ -56,42 +56,42 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
-        <sys_created_on>2022-09-08 17:59:48</sys_created_on>
+        <sys_created_on>2022-09-09 01:52:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>969897391b3d1910b342dc61ab4bcb67</sys_id>
+        <sys_id>84e481821b715910b342dc61ab4bcbd4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:48</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:52</sys_updated_on>
         <table>x_sigh_ausleihsyst_renting</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"1e9897391b3d1910b342dc61ab4bcb67","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"40e481821b715910b342dc61ab4bcbd5","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
         <identifier>59f8e56d1b3dd510b342dc61ab4bcb7c</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
-        <sys_created_on>2022-09-08 17:59:48</sys_created_on>
-        <sys_id>1e9897391b3d1910b342dc61ab4bcb67</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2022-09-09 01:52:52</sys_created_on>
+        <sys_id>40e481821b715910b342dc61ab4bcbd5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:34:58</sys_updated_on>
-        <trigger display_value="">969897391b3d1910b342dc61ab4bcb67</trigger>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
+        <trigger display_value="">84e481821b715910b342dc61ab4bcbd4</trigger>
     </sys_trigger_runner_mapping>
     <sys_json_chunk action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
-        <document_id>1e9897391b3d1910b342dc61ab4bcb67</document_id>
+        <document_id>40e481821b715910b342dc61ab4bcbd5</document_id>
         <field>trigger_runner</field>
         <length>144</length>
         <position>0</position>
         <source_table>sys_trigger_runner_mapping</source_table>
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
-        <sys_created_on>2022-09-08 17:59:48</sys_created_on>
-        <sys_id>de9897391b3d1910b342dc61ab4bcb67</sys_id>
+        <sys_created_on>2022-09-09 01:52:53</sys_created_on>
+        <sys_id>48e481821b715910b342dc61ab4bcbd5</sys_id>
     </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN1e9897391b3d1910b342dc61ab4bcb67"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN40e481821b715910b342dc61ab4bcbd5"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=59f8e56d1b3dd510b342dc61ab4bcb7c^sys_idNOT IN403832a11b311910b342dc61ab4bcb25"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -102,10 +102,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>403832a11b311910b342dc61ab4bcb25</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:59</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -173,7 +173,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -231,14 +231,14 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>043832a11b311910b342dc61ab4bcb20</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:58</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -254,7 +254,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -312,14 +312,14 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:43</sys_created_on>
         <sys_id>c43832a11b311910b342dc61ab4bcb17</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:58</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -348,10 +348,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 16:00:23</sys_created_on>
         <sys_id>094dfaf11bf91910b342dc61ab4bcbfd</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:59</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <ui_id>97f0a082-5ab9-4bd2-b876-69d8369bbbd8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=094dfaf11bf91910b342dc61ab4bcbfd"/>
@@ -436,10 +436,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 16:37:29</sys_created_on>
         <sys_id>5cc547791bf91910b342dc61ab4bcb8e</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:59</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <ui_id>d883afcf-5144-4ff2-aead-359ddca94099</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5cc547791bf91910b342dc61ab4bcb8e"/>
@@ -524,10 +524,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>943832a11b311910b342dc61ab4bcb2e</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:59</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <ui_id>9f89d3dc-61ce-451c-ba77-ad2f98d6743e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=943832a11b311910b342dc61ab4bcb2e"/>
@@ -623,10 +623,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:15:50</sys_created_on>
         <sys_id>1a8e87fd1bf91910b342dc61ab4bcbec</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 18:37:59</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <ui_id>9bb5c52d-e31e-48ff-951e-e7005e1817f0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -995,7 +995,7 @@
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>0c3832a11b311910b342dc61ab4bcb1e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
@@ -1018,7 +1018,7 @@
         <sys_created_on>2022-09-07 20:59:44</sys_created_on>
         <sys_id>4c3832a11b311910b342dc61ab4bcb22</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
@@ -1042,12 +1042,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1a289ff51b3d1910b342dc61ab4bcb39</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:48</sys_updated_on>
-        <trigger display_value="">969897391b3d1910b342dc61ab4bcb67</trigger>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
+        <trigger display_value="">84e481821b715910b342dc61ab4bcbd4</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=59f8e56d1b3dd510b342dc61ab4bcb7c"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -1078,7 +1078,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>42285ff51b3d1910b342dc61ab4bcb6d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1086,7 +1086,7 @@
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:47</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=42285ff51b3d1910b342dc61ab4bcb6d"/>
@@ -1101,10 +1101,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>0e285ff51b3d1910b342dc61ab4bcbd1</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:48</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:53</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1230,14 +1230,14 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:52</sys_created_on>
         <sys_id>86285ff51b3d1910b342dc61ab4bcb6f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:46</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1311,14 +1311,14 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>c2285ff51b3d1910b342dc61ab4bcb7e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name/>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:46</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1347,10 +1347,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>02285ff51b3d1910b342dc61ab4bcba3</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:47</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <ui_id>9f89d3dc-61ce-451c-ba77-ad2f98d6743e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=02285ff51b3d1910b342dc61ab4bcba3"/>
@@ -1389,12 +1389,12 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>86285ff51b3d1910b342dc61ab4bcba5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:57:53</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
         <value>&lt;p data-tinymcerootblock=""&gt;Sehr geehrte(r) &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2a158ffa-f73c-4d37-9dc4-296e83619747}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2a158ffa-f73c-4d37-9dc4-296e83619747}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; User &amp;gt; Title"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Title&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_2a158ffa-f73c-4d37-9dc4-296e83619747" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c15c5b0f-67df-473d-a013-4b1d65d1a220}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:c15c5b0f-67df-473d-a013-4b1d65d1a220}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; User &amp;gt; Last name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Last name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c15c5b0f-67df-473d-a013-4b1d65d1a220" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:d9041f0f-57cd-472d-9d43-2026d546ec94}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:d9041f0f-57cd-472d-9d43-2026d546ec94}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; User &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_d9041f0f-57cd-472d-9d43-2026d546ec94" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp; Ihr Produkt&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; "&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:876653c7-fff0-4b6d-bbfc-86f92ec91c5c}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:876653c7-fff0-4b6d-bbfc-86f92ec91c5c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_876653c7-fff0-4b6d-bbfc-86f92ec91c5c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; " ist ab " &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:f99cbaf4-cd8b-497e-8501-79e4464eed52}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:f99cbaf4-cd8b-497e-8501-79e4464eed52}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; DateStart"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;DateStart&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_f99cbaf4-cd8b-497e-8501-79e4464eed52" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp; " f&amp;uuml;r Sie zum Abholen bereit.&lt;/p&gt;
-&lt;p data-tinymcerootblock=""&gt;Denken Sie bitte daran das Produkt sp&amp;auml;testens am "&amp;nbsp; &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:4bae61f1-15ab-4d28-993b-8c3281bba664}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:4bae61f1-15ab-4d28-993b-8c3281bba664}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; DateEnd"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;DateEnd&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_4bae61f1-15ab-4d28-993b-8c3281bba664" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; " zur&amp;uuml;ckzugeben.&lt;br /&gt;&lt;br /&gt;MfG, &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c12382a3-ef1c-47ad-82e6-1809bdb1639c}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:c12382a3-ef1c-47ad-82e6-1809bdb1639c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Lender &amp;gt; Last name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Last name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c12382a3-ef1c-47ad-82e6-1809bdb1639c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:fca9c187-c652-4080-8987-07241dc8e81f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:fca9c187-c652-4080-8987-07241dc8e81f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Lender &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_fca9c187-c652-4080-8987-07241dc8e81f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+&lt;p data-tinymcerootblock=""&gt;Denken Sie bitte daran das Produkt sp&amp;auml;testens am "&amp;nbsp; &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:4bae61f1-15ab-4d28-993b-8c3281bba664}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:4bae61f1-15ab-4d28-993b-8c3281bba664}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; DateEnd"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;DateEnd&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_4bae61f1-15ab-4d28-993b-8c3281bba664" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; " zur&amp;uuml;ckzugeben.&lt;br /&gt;&lt;br /&gt;MfG, &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c12382a3-ef1c-47ad-82e6-1809bdb1639c}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:c12382a3-ef1c-47ad-82e6-1809bdb1639c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Lender &amp;gt; Last name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Last name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c12382a3-ef1c-47ad-82e6-1809bdb1639c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:fca9c187-c652-4080-8987-07241dc8e81f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:fca9c187-c652-4080-8987-07241dc8e81f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Renting Record &amp;gt; Equipment &amp;gt; Lender &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_fca9c187-c652-4080-8987-07241dc8e81f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>ah_subject</field>
@@ -1436,10 +1436,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>82285ff51b3d1910b342dc61ab4bcbcf</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:47</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <ui_id>d883afcf-5144-4ff2-aead-359ddca94099</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=82285ff51b3d1910b342dc61ab4bcbcf"/>
@@ -1524,10 +1524,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>86285ff51b3d1910b342dc61ab4bcbad</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:47</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <ui_id>97f0a082-5ab9-4bd2-b876-69d8369bbbd8</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=86285ff51b3d1910b342dc61ab4bcbad"/>
@@ -1553,10 +1553,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>4a285ff51b3d1910b342dc61ab4bcbaf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:57:53</sys_updated_on>
-        <value>dateendRELATIVEGT@dayofweek@ahead@1</value>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
+        <value>dateendRELATIVEGT@dayofweek@ahead@2^ORdateendRELATIVEGT@dayofweek@ahead@1^ORdateendRELATIVEGT@dayofweek@ahead@0</value>
         <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=86285ff51b3d1910b342dc61ab4bcbad"/>
@@ -1622,10 +1622,10 @@
         <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>ce285ff51b3d1910b342dc61ab4bcb95</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-08 17:59:47</sys_updated_on>
+        <sys_updated_on>2022-09-09 01:52:51</sys_updated_on>
         <ui_id>9bb5c52d-e31e-48ff-951e-e7005e1817f0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1994,7 +1994,7 @@
         <sys_created_on>2022-09-08 17:57:52</sys_created_on>
         <sys_id>8a285ff51b3d1910b342dc61ab4bcb7a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
@@ -2017,7 +2017,7 @@
         <sys_created_on>2022-09-08 17:57:53</sys_created_on>
         <sys_id>c2285ff51b3d1910b342dc61ab4bcb8f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
