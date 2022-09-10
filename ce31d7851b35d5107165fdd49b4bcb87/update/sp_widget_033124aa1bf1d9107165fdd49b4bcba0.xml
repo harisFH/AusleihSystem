@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	
+	c.addEquip= function(){
+		console.log("works");
+		
+	c.data.nome= c.data.name;
+		console.log(c.data.nome);
+	c.data.amount= c.data.anz;
+	c.data.cat = c.data.kat;
+	c.data.descr= c.data.desc;
+	c.server.update();
+	alert("Eintrag wurde erfolgreich hinzugefügt!");	
+	window.location.reload();
+	};
+	
+c.uiAction = function(action) {
+if(action == 'cancel'){
+var r = confirm("Wollen Sie den Vorgang wirklich abbrechen?");
+
+if(r == false){
+return;
+}
+	window.location.reload();
+}
+c.data.action = action;
+c.server.update().then(function() {
+c.data.action = undefined;
+});
+};
+ 
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.required:after {
+    content:" *";
+    color: red;
+}
+  Body {  
+ 
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: black;  
+}  
+button {   
+       background-color: #00b5ad
+;   
+        width: 45%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 1px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=textarea] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid #00b5ad
+;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.6;
+   			background-color: black;
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: white;  
+    }   </css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>as_add_new_equipment</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>AS Add new Equipment</name>
+        <option_schema/>
+        <public>true</public>
+        <roles>x_sigh_ausleihsyst.professor</roles>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.user = gs.getUserID();
+		
+var userLender = new GlideRecord('x_sigh_ausleihsyst_lender');
+    userLender.addQuery('sys_id', data.user);
+    userLender.query();
+
+
+	
+	var eq= new GlideRecord ('x_sigh_ausleihsyst_equipment');
+	eq.initialize();
+	eq.setValue('name',input.nome);
+	eq.setValue('amount',input.amount);
+	eq.setValue('category',input.cat);
+	eq.setValue('description',input.descr);
+	//Sofort verfügbar Satus= available
+	eq.setValue('availability', 3);
+	eq.setValue('lender', data.user);
+
+
+  eq.insert();
+	
+
+
+})(); ]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-10 12:34:07</sys_created_on>
+        <sys_id>033124aa1bf1d9107165fdd49b4bcba0</sys_id>
+        <sys_mod_count>128</sys_mod_count>
+        <sys_name>AS Add new Equipment</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sp_widget_033124aa1bf1d9107165fdd49b4bcba0</sys_update_name>
+        <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-10 16:36:27</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <h1>
+    Neues Equipment hinzufügen
+  </h1>
+  <br>
+  <p>
+    Füllen Sie das Formular und alle Pflichtfelder aus,um ein neues Equipment anzulegen
+  </p>
+  <br>
+  <form>
+  <div class="form-group">
+    <label class="required" for="Name">Name des Equipments</label> 
+    <input ng-model="c.data.name" type="text" class="form-control" maxlength="40" id="Name" required>
+    </div>
+    
+      <div class="form-group">
+    <label class="required" for="anzahl" >Anzahl</label>
+    <input ng-model="c.data.anz" type="text" class="form-control" id="anzahl" required>
+    <label class="required" for="kat">Kategorie</label>
+    <input  ng-model="c.data.kat" type="text" class="form-control" id="kat" required>
+  </div>
+ 
+
+  <div class="form-group">
+    <label class="required"for="Desc">Beschreibung</label>
+    <textarea class="form-control"   ng-model="c.data.desc" maxlength="100"id="Desc" rows="2" required></textarea>
+  </div>
+    <button type="submit" ng-click="c.addEquip()" class="btn btn-primary mb-2">Equipment hinzufügen</button>
+    <button type="submit"  ng-click="c.uiAction('cancel')" class="btn btn-primary mb-2">Abbrechen</button>
+</form>
+</div>]]></template>
+    </sp_widget>
+</record_update>

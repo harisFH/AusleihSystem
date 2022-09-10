@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	c.triggerOnSubmit = function(equipment) {
+		this.server.get({
+			method: "confirmEquipment",
+			equipment_sys_id: equipment
+		});
+		 window.location.reload();
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.col {
+  margin-bottom: 5rem;
+}
+
+.container-fluid {
+  padding: 3% 6%;
+}
+
+.card-body {
+  padding: 2rem;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>as_return</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>AS Return</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.equipments=[];
+	var equipmentsGR = new GlideRecord('x_sigh_ausleihsyst_equipment');
+	equipmentsGR.query();
+	
+	while(equipmentsGR.next()) {
+		data.equipments.push({
+			sys_id: equipmentsGR.sys_id.toString(),
+			name: equipmentsGR.name.toString(),
+			description: equipmentsGR.description.toString(),
+			category: equipmentsGR.category.toString(),
+			lender: equipmentsGR.lender.toString(),
+			availability: equipmentsGR.availability.toString()
+		});
+	}
+	
+	if(input){
+		console.log(input);
+		if(input.method === "confirmEquipment"){
+			var newEquipmentsGR = new GlideRecord('x_sigh_ausleihsyst_equipment');
+			newEquipmentsGR.addQuery("sys_id", input.equipment_sys_id);
+			newEquipmentsGR.query();
+			
+			if(newEquipmentsGR.next()){
+				newEquipmentsGR.availability = 3;
+				newEquipmentsGR.update();
+			
+		}
+			
+			}
+		var rentingUp= new GlideRecord ('x_sigh_ausleihsyst_renting');
+				rentingUp.addQuery("equipment",input.equipment_sys_id);
+				rentingUp.addQuery("returned",0);
+				rentingUp.addQuery();
+				rentingUp.setValue("returned",2);
+				rentingUp.update();
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-10 17:10:54</sys_created_on>
+        <sys_id>1d90256e1bb5d9107165fdd49b4bcbab</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>AS Return</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sp_widget_1d90256e1bb5d9107165fdd49b4bcbab</sys_update_name>
+        <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-10 17:42:48</sys_updated_on>
+        <template><![CDATA[<div class="container-fluid">
+<div class="row mb-3 text-center">
+      <div class="col-sm-12 col-md-6 col" ng-repeat="equipment in data.equipments" ng-if="equipment.availability == 2">
+        <div class="card rounded-3 shadow-sm thumbnail">
+          <div class="card-body caption">
+            <h3 class="card-title pricing-card-title">{{equipment.name}}</h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>{{equipment.description}}</li>
+              <li>{{equipment.category}}</li>
+            </ul>
+            <button ng-click="c.triggerOnSubmit(equipment.sys_id);" class="w-100 btn btn-lg btn-primary">Rückgabe</button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
