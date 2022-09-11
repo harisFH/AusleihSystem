@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="bestellungstatus" table="x_sigh_ausleihsyst_order" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>bestellungstatus</element>
+            <name>x_sigh_ausleihsyst_order</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-11 00:32:00</sys_created_on>
+            <sys_id>0385032697751110f7823d400153af03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>bestellungstatus</sys_name>
+            <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+            <sys_update_name>sys_choice_x_sigh_ausleihsyst_order_bestellungstatus</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-11 00:32:00</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bestellungstatus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bestellung Abgeschlossen</label>
+            <language>en</language>
+            <name>x_sigh_ausleihsyst_order</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-11 00:32:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a650f2e97351110f7823d400153af00</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-11 00:55:11</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>bestellungstatus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bestellung in Bearbeitung</label>
+            <language>en</language>
+            <name>x_sigh_ausleihsyst_order</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-11 00:33:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e854b6697751110f7823d400153af63</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-11 01:11:01</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="order2equipment" max_length="40" name="x_sigh_ausleihsyst_m2m_equipments_orders" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Anzahl" max_length="40" name="anzahl" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Equipment" max_length="32" name="equipment" reference="x_sigh_ausleihsyst_equipment" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Order" max_length="32" name="order" reference="x_sigh_ausleihsyst_order" type="reference"/>
+        <index name="index">
+            <element name="equipment"/>
+        </index>
+        <index name="index2">
+            <element name="order"/>
+        </index>
+    </element>
+</database>

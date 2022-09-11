@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Equipment" max_length="40" name="x_sigh_ausleihsyst_equipment" sizeclass="15" type="collection">
+    <element label="Equipment" max_length="40" name="x_sigh_ausleihsyst_equipment" sizeclass="3" type="collection">
         <element label="Amount" max_length="40" name="amount" type="integer"/>
         <element choice="1" label="Availability" max_length="40" name="availability" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Available" value="3"/>
-                <element inactive_on_update="false" label="Pending" value="0"/>
-                <element inactive_on_update="false" label="Rented" value="2"/>
+                <element inactive_on_update="false" label="Available" value="2"/>
+                <element inactive_on_update="false" label="unavailable" value="3"/>
             </choice>
         </element>
         <element label="Category" max_length="40" name="category" type="string"/>
