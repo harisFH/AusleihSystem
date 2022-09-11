@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles>x_sigh_ausleihsyst.student,x_sigh_ausleihsyst.renting_user,x_sigh_ausleihsyst.mitarbeiter,x_sigh_ausleihsyst.professor,x_sigh_ausleihsyst.guest,x_sigh_ausleihsyst.lender_user,x_sigh_ausleihsyst.equipment_user,x_sigh_ausleihsyst.department_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>mansouri.aya@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-10 17:25:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c1a325aa1b399910b342dc61ab4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AusleihSystem</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sys_app_application_c1a325aa1b399910b342dc61ab4bcbcb</sys_update_name>
+        <sys_updated_by>mansouri.aya@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-10 17:25:00</sys_updated_on>
+        <title>AusleihSystem</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</application>
+        <file_path/>
+        <instance_id>0580d5f7db463010f492c59705961940</instance_id>
+        <instance_name>snaccitgmbhdemo4</instance_name>
+        <name>sys_app_application_c1a325aa1b399910b342dc61ab4bcbcb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles>x_sigh_ausleihsyst.student,x_sigh_ausleihsyst.renting_user,x_sigh_ausleihsyst.mitarbeiter,x_sigh_ausleihsyst.professor,x_sigh_ausleihsyst.guest,x_sigh_ausleihsyst.lender_user,x_sigh_ausleihsyst.equipment_user,x_sigh_ausleihsyst.department_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>mansouri.aya@alumni.fh-aachen.de</sys_created_by><sys_created_on>2022-09-10 17:25:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c1a325aa1b399910b342dc61ab4bcbcb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AusleihSystem</sys_name><sys_overrides/><sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package><sys_policy/><sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope><sys_update_name>sys_app_application_c1a325aa1b399910b342dc61ab4bcbcb</sys_update_name><sys_updated_by>mansouri.aya@alumni.fh-aachen.de</sys_updated_by><sys_updated_on>2022-09-10 17:25:00</sys_updated_on><title>AusleihSystem</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>597908014</payload_hash>
+        <record_name>AusleihSystem</record_name>
+        <reverted_from/>
+        <source>be77a96e1b399910b342dc61ab4bcbfc</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-10 17:41:02</sys_created_on>
+        <sys_id>f277e96e1b399910b342dc61ab4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183287d96a80000001</sys_recorded_at>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-10 17:41:02</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>77c3a5aaf63999100c65dc3d3b00967a</update_guid>
+        <update_guid_history>77c3a5aaf63999100c65dc3d3b00967a:597908014,7657a56e973999107a03d928e3753908:-1629335062,77c3a5aaf63999100c65dc3d3b00967a:597908014</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="AusleihSystem">179d6da21b799910b342dc61ab4bcb32</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mansouri.aya@alumni.fh-aachen.de</sys_created_by>
+        <sys_created_on>2022-09-10 18:07:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>8bf2b7df5ae740229bf707753687e284</sys_id>
+        <sys_metadata>c1a325aa1b399910b342dc61ab4bcbcb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AusleihSystem</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_scope_delete display_value="">06a867e3abfb4b1e9756668d6ec4bb44</sys_scope_delete>
+        <sys_update_name>sys_app_application_c1a325aa1b399910b342dc61ab4bcbcb</sys_update_name>
+        <sys_update_version display_value="sys_app_application_c1a325aa1b399910b342dc61ab4bcbcb">f277e96e1b399910b342dc61ab4bcb8b</sys_update_version>
+        <sys_updated_by>mansouri.aya@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-10 18:07:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

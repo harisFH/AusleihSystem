@@ -39,7 +39,7 @@
         <name>AS Return</name>
         <option_schema/>
         <public>true</public>
-        <roles/>
+        <roles>x_sigh_ausleihsyst.mitarbeiter,x_sigh_ausleihsyst.professor</roles>
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
@@ -68,31 +68,41 @@
 			if(newEquipmentsGR.next()){
 				newEquipmentsGR.availability = 3;
 				newEquipmentsGR.update();
+				
+		
+	}
+					
+			  var rs= new GlideRecord ('x_sigh_ausleihsyst_renting');
+				rs.addQuery("equipment", input.equipment_sys_id);
+				rs.addQuery("returned", 3);
+				rs.query();
 			
+				if(rs.next()){
+				rs.setValue("returned",2);
+				rs.update();
+		
+	}
+				
+				
+				
 		}
 			
 			}
-		var rentingUp= new GlideRecord ('x_sigh_ausleihsyst_renting');
-				rentingUp.addQuery("equipment",input.equipment_sys_id);
-				rentingUp.addQuery("returned",0);
-				rentingUp.addQuery();
-				rentingUp.setValue("returned",2);
-				rentingUp.update();
-	}
+
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
         <sys_created_on>2022-09-10 17:10:54</sys_created_on>
         <sys_id>1d90256e1bb5d9107165fdd49b4bcbab</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>AS Return</sys_name>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sp_widget_1d90256e1bb5d9107165fdd49b4bcbab</sys_update_name>
         <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-10 17:42:48</sys_updated_on>
+        <sys_updated_on>2022-09-10 18:57:23</sys_updated_on>
         <template><![CDATA[<div class="container-fluid">
 <div class="row mb-3 text-center">
       <div class="col-sm-12 col-md-6 col" ng-repeat="equipment in data.equipments" ng-if="equipment.availability == 2">

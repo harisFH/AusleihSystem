@@ -3,7 +3,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -17,7 +17,7 @@
         <column_label>Fee</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>0</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -60,8 +60,8 @@
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_dictionary_x_sigh_ausleihsyst_renting_fee</sys_update_name>
-        <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-06 13:06:01</sys_updated_on>
+        <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
+        <sys_updated_on>2022-09-11 02:29:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

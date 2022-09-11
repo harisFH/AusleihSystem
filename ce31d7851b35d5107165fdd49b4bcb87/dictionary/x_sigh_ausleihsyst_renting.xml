@@ -3,10 +3,10 @@
         <element label="DateEnd" max_length="40" name="dateend" type="glide_date_time"/>
         <element label="DateStart" max_length="40" name="datestart" type="glide_date_time"/>
         <element label="Equipment" max_length="32" name="equipment" reference="x_sigh_ausleihsyst_equipment" type="reference"/>
-        <element label="Fee" max_length="40" name="fee" type="float"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Fee" max_length="40" name="fee" type="float"/>
         <element choice="1" label="Returned" max_length="40" name="returned" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Rented" value="0"/>
+                <element inactive_on_update="false" label="Rented" value="3"/>
                 <element inactive_on_update="false" label="Returned" value="2"/>
             </choice>
         </element>
