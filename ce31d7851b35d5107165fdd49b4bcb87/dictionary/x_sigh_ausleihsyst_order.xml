@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="order" max_length="40" name="x_sigh_ausleihsyst_order" type="collection">
+    <element audit="true" label="order" max_length="40" name="x_sigh_ausleihsyst_order" sizeclass="7" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="BestellungStatus" max_length="40" name="bestellungstatus" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Bestellung Abgeschlossen" value="2"/>
@@ -7,10 +7,12 @@
             </choice>
         </element>
         <element label="DateEnd" max_length="40" name="dateend" type="glide_date_time"/>
-        <element label="Datestart" max_length="40" name="datestart" type="glide_date_time"/>
+        <element label="Für Wann" mandatory="true" max_length="40" name="datestart" type="glide_date_time"/>
+        <element choice="3" label="Abteilung" mandatory="true" max_length="32" name="department" reference="cmn_department" reference_qual="id=FHAachen^EQ" reference_qual_condition="id=FHAachen^EQ" type="reference">
+            <choice/>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Fee" max_length="40" name="fee" type="float"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="orderID" max_length="40" name="orderid" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Pending" value="4"/>
@@ -20,6 +22,9 @@
         </element>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="User" max_length="32" name="user" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
             <element name="user"/>
         </index>
     </element>

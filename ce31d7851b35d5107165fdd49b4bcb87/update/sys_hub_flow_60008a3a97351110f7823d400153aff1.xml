@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>the flow should automate the process of renting  object(s) until they are brought back to the owner</description>
+        <internal_name>ausleihsystem_automation</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>AusleihSystem Automation </name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-11 14:06:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>60008a3a97351110f7823d400153aff1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AusleihSystem Automation </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sys_hub_flow_60008a3a97351110f7823d400153aff1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-11 14:06:39</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=60008a3a97351110f7823d400153aff1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=60008a3a97351110f7823d400153aff1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=60008a3a97351110f7823d400153aff1^sys_idNOT IN20008a3a97351110f7823d400153aff3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>60008a3a97351110f7823d400153aff1</id>
+        <name>AusleihSystem Automation </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-11 14:06:40</sys_created_on>
+        <sys_id>20008a3a97351110f7823d400153aff3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-11 14:06:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=20008a3a97351110f7823d400153aff3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=60008a3a97351110f7823d400153aff1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=60008a3a97351110f7823d400153aff1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_60008a3a97351110f7823d400153aff1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_60008a3a97351110f7823d400153aff1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_60008a3a97351110f7823d400153aff1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_60008a3a97351110f7823d400153aff1"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=60008a3a97351110f7823d400153aff1"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=60008a3a97351110f7823d400153aff1"/>
+</record_update>

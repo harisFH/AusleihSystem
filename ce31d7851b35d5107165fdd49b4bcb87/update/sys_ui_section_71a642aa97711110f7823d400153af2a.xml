@@ -4,69 +4,55 @@
             <element>datestart</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-10 22:39:41</sys_created_on>
-            <sys_id>79dbee6e97f11110f7823d400153af72</sys_id>
+            <sys_created_on>2022-09-11 18:53:53</sys_created_on>
+            <sys_id>c4c14b3697391110f7823d400153afc3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-10 22:39:41</sys_updated_on>
+            <sys_updated_on>2022-09-11 18:53:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cxs_table_search.xml</element>
+            <element>bestellungstatus</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-10 22:39:41</sys_created_on>
-            <sys_id>7ddbee6e97f11110f7823d400153af72</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-10 22:39:41</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>activity.xml</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-10 22:39:41</sys_created_on>
-            <sys_id>b1dbee6e97f11110f7823d400153af73</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-10 22:39:41</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>ratings.xml</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-10 22:39:41</sys_created_on>
-            <sys_id>b5dbee6e97f11110f7823d400153afae</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="Ratings">a3340f6bd7111100158ba6859e610331</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-10 22:39:41</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>bestellungstatus</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-09-11 00:29:36</sys_created_on>
-            <sys_id>bbf4036697751110f7823d400153af79</sys_id>
+            <sys_created_on>2022-09-11 18:53:53</sys_created_on>
+            <sys_id>8cc14b3697391110f7823d400153afc3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-09-11 00:29:36</sys_updated_on>
+            <sys_updated_on>2022-09-11 18:53:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lender</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-11 18:53:53</sys_created_on>
+            <sys_id>00c14b3697391110f7823d400153afc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-11 18:53:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-11 22:24:45</sys_created_on>
+            <sys_id>e402bffe97b91110f7823d400153afa5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sigh_ausleihsyst_order" sys_domain="global" view="Default view">71a642aa97711110f7823d400153af2a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-11 22:24:45</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

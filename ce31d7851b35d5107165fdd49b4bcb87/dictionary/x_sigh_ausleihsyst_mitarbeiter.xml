@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_user" label="Mitarbeiter" max_length="40" name="x_sigh_ausleihsyst_mitarbeiter" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Verleiher" max_length="32" name="verleiher" reference="x_sigh_ausleihsyst_lender" type="reference"/>
+        <index name="index">
+            <element name="verleiher"/>
+        </index>
+    </element>
+</database>
