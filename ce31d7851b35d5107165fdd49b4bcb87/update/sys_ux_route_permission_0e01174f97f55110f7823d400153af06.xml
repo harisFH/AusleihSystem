@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_route_permission">
+    <sys_ux_route_permission action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <groups/>
+        <roles/>
+        <route display_value="AuslehSystem">8601174f97f55110f7823d400153af01</route>
+        <sys_class_name>sys_ux_route_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-12 14:39:09</sys_created_on>
+        <sys_id>0e01174f97f55110f7823d400153af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sys_ux_route_permission_0e01174f97f55110f7823d400153af06</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-12 14:39:09</sys_updated_on>
+        <type>write</type>
+        <users>6816f79cc0a8016401c5a33be04be441</users>
+    </sys_ux_route_permission>
+</record_update>

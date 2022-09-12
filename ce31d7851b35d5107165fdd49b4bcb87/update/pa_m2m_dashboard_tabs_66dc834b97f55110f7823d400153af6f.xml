@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Bestand">b68c4f0b97f55110f7823d400153afde</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-12 14:20:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>66dc834b97f55110f7823d400153af6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b68c4f0b97f55110f7823d400153afde</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_66dc834b97f55110f7823d400153af6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-12 14:20:53</sys_updated_on>
+        <tab display_value="">e6dc834b97f55110f7823d400153af6c</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>
