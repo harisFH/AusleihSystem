@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Calculate Fee </name>
+        <name>Calculate Fee ALTEVERSION</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -67,15 +67,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23d496b51b791910b342dc61ab4bcbe0</sys_id>
-        <sys_mod_count>66</sys_mod_count>
-        <sys_name>Calculate Fee </sys_name>
+        <sys_mod_count>67</sys_mod_count>
+        <sys_name>Calculate Fee ALTEVERSION</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_script_23d496b51b791910b342dc61ab4bcbe0</sys_update_name>
-        <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
-        <sys_updated_on>2022-09-09 13:36:58</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 13:34:25</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -3,22 +3,22 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
-        <action_query>false</action_query>
-        <action_update>true</action_update>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_sigh_ausleihsyst_renting</collection>
+        <collection>x_sigh_ausleihsyst_equipment</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Startdate/Enddate ALTEVERSION</name>
+        <name>FilterOnlyDepartmentSpecificList</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,40 +28,37 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
-if ((!current.datestart.nil()) && (!current.dateEnd.nil())) { 
-  var start = current.dateStart.getGlideObject().getNumericValue(); 
-  var end = current.dateEnd.getGlideObject().getNumericValue(); 
-  if (start > end) {
-    gs.addInfoMessage('Startdatum muss vor dem Enddatum sein');
-    current.dateStart.setError('Startdatum muss vor dem Enddatum sein') ;
-    current.setAbortAction(true);
- } 
-  if(end > start.addDays(30)){
-	gs.addInfoMessage('Enddatum darf nicht mehr als 30 Tage in der Zukunft liegen');
-    current.dateStart.setError('Enddatum darf nicht mehr als 30 Tage in der Zukunft liegen') ;
-    current.setAbortAction(true);
+	/*
+	Hole mir die Record Order Prüfe ob es für den Record order 
+	einträge im Cart gibt, falls nicht dann nehme die Department und 
+	Filtere die Liste an Equipments nach Department*/
+	var grOrder = new GlideRecord ("x_sigh_ausleihsyst_order");
+	//var grCart = new GlideRecord ("x_sigh_ausleihsyst_m2m_equipments_orders");
+	grOrder.addQuery("bestellungstatus", "3");
+	grOrder.addQuery("user", gs.getUserID());
+	grOrder.query();
+	if (grOrder.next()){
+		current.addQuery("department", grOrder.department);
 	}
-}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
-        <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
-        <sys_created_on>2022-09-08 13:00:08</sys_created_on>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 11:33:42</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>627056f11b791910b342dc61ab4bcb20</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Startdate/Enddate ALTEVERSION</sys_name>
+        <sys_id>a4e06f5397f59110f7823d400153af0a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>FilterOnlyDepartmentSpecificList</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
-        <sys_update_name>sys_script_627056f11b791910b342dc61ab4bcb20</sys_update_name>
+        <sys_update_name>sys_script_a4e06f5397f59110f7823d400153af0a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 13:35:04</sys_updated_on>
+        <sys_updated_on>2022-09-13 13:12:07</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=627056f11b791910b342dc61ab4bcb20"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a4e06f5397f59110f7823d400153af0a"/>
 </record_update>

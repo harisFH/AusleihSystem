@@ -34,7 +34,7 @@
 var grGrp = new GlideRecord("sys_user_group");
 grGrp.addQuery("name","Quittierer");
 grGrp.query();
-gs.info("außerhalb von if");
+//gs.info("außerhalb von if");
 if (grGrp.next()){
 	//gs.info("in if");
 	//gs.info(grGrp.isValid() );
@@ -55,7 +55,7 @@ if (grGrp.next()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4f72de8f97f15110f7823d400153af2f</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Zum Quitierrer machen</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -63,7 +63,7 @@ if (grGrp.next()){
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_ui_action_4f72de8f97f15110f7823d400153af2f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-12 13:48:52</sys_updated_on>
+        <sys_updated_on>2022-09-13 01:16:46</sys_updated_on>
         <table>sys_user</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
