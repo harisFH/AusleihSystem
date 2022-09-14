@@ -30,8 +30,26 @@
         <name>Bestellung Zurückgegeben</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.status=3;
-current.update();]]></script>
+        <script><![CDATA[var currUserGR = new GlideRecord("sys_user");
+
+/*für testen der delete kaskade
+	current.status=3;
+		current.update();
+		gs.addInfoMessage("Ausleihe wurde erfolgreich zurückgebucht");
+*/
+/*eigentliche Funktion*/
+if (currUserGR.get("user", gs.getUserID())){
+	if (currUserGR.department==current.department){
+		current.status=3;
+		current.update();
+		gs.addInfoMessage("Ausleihe wurde erfolgreich zurückgebucht");
+	}else{
+		gs.addInfoMessage("Sie dürfen nur die Produkte ihrer Abteilung annehmen");
+		current.setAbortAction(true);
+	}
+}
+
+]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -42,7 +60,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a524353e97f11110f7823d400153aff5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Bestellung Zurückgegeben</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -50,7 +68,7 @@ current.update();]]></script>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_ui_action_a524353e97f11110f7823d400153aff5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-11 13:19:52</sys_updated_on>
+        <sys_updated_on>2022-09-14 13:09:18</sys_updated_on>
         <table>x_sigh_ausleihsyst_order</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Mitarbeiter" max_length="40" name="x_sigh_ausleihsyst_mitarbeiter" sizeclass="4" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Vorname" max_length="40" name="vorname" type="string"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

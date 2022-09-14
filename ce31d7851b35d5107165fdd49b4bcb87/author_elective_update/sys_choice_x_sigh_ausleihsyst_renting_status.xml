@@ -6,7 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
             <sys_created_on>2022-09-07 16:12:54</sys_created_on>
-            <sys_id>ae867da51b7dd510b342dc61ab4bcb46</sys_id>
+            <sys_id>14be696697311110f7823d400153af83</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>status</sys_name>
             <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -16,65 +16,5 @@
             <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
             <sys_updated_on>2022-09-07 16:12:54</sys_updated_on>
         </sys_choice_set>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>pending</label>
-            <language>en</language>
-            <name>x_sigh_ausleihsyst_renting</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
-            <sys_created_on>2022-09-07 16:12:54</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>b8363da51b7dd510b342dc61ab4bcb8e</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-            <sys_updated_on>2022-09-07 16:14:39</sys_updated_on>
-            <value>0</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>rented</label>
-            <language>en</language>
-            <name>x_sigh_ausleihsyst_renting</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
-            <sys_created_on>2022-09-07 16:14:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>b6867da51b7dd510b342dc61ab4bcb83</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-            <sys_updated_on>2022-09-07 16:14:50</sys_updated_on>
-            <value>1</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>status</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>returned</label>
-            <language>en</language>
-            <name>x_sigh_ausleihsyst_renting</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>haris.ogresevic@alumni.fh-aachen.de</sys_created_by>
-            <sys_created_on>2022-09-07 16:14:59</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>69f675e51b7dd510b342dc61ab4bcbb6</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>haris.ogresevic@alumni.fh-aachen.de</sys_updated_by>
-            <sys_updated_on>2022-09-07 16:15:05</sys_updated_on>
-            <value>2</value>
-        </sys_choice>
     </sys_choice>
 </record_update>

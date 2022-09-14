@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition/>
+        <condition>gs.getUserID() != current.sys_id;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -30,20 +30,34 @@
         <name>Zum Quitierrer machen</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var grGrpMmbr = new GlideRecord("sys_user_grmember");
-var grGrp = new GlideRecord("sys_user_group");
-grGrp.addQuery("name","Quittierer");
-grGrp.query();
-//gs.info("außerhalb von if");
-if (grGrp.next()){
-	//gs.info("in if");
-	//gs.info(grGrp.isValid() );
-	grGrpMmbr.initialize();
-	//gs.info();
-	grGrpMmbr.setValue("user", current.sys_id);
-	grGrpMmbr.setValue("group", grGrp.sys_id);
-	grGrpMmbr.insert();
-}
+        <script><![CDATA[
+	var currSystemUser = new GlideRecord("sys_user");
+	if (currSystemUser.get(gs.getUserID())){
+		if (currSystemUser.department == current.department){
+			var grGrpMmbr = new GlideRecord("sys_user_grmember");
+			var grGrp = new GlideRecord("sys_user_group");
+			grGrp.addQuery("name","Quittierer");
+			grGrp.query();
+			//gs.info("außerhalb von if");
+			if (grGrp.next()){
+				//gs.info("in if");
+				//gs.info(grGrp.isValid() );
+				grGrpMmbr.initialize();
+				//gs.info();
+				grGrpMmbr.setValue("user", current.sys_id);
+				grGrpMmbr.setValue("group", grGrp.sys_id);
+				grGrpMmbr.insert();
+			}
+			gs.addInfoMessage("Der Mitarbeiter "+ current.user_name + " darf jetzt die Produkte annehmen");
+		}else{
+				gs.addInfoMessage("Sie können nur ihre Mitarbeiter verwalten");
+				//current.setAbortAction(true);
+			}
+		}
+
+
+	
+
 ]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -55,7 +69,7 @@ if (grGrp.next()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4f72de8f97f15110f7823d400153af2f</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Zum Quitierrer machen</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -63,7 +77,7 @@ if (grGrp.next()){
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_ui_action_4f72de8f97f15110f7823d400153af2f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 01:16:46</sys_updated_on>
+        <sys_updated_on>2022-09-13 21:11:44</sys_updated_on>
         <table>sys_user</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

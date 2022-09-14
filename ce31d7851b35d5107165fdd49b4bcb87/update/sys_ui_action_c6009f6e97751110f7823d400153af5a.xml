@@ -33,8 +33,10 @@
         <script><![CDATA[current.bestellungstatus=3;
 current.update();
 action.setRedirectURL(current);
-
-if (current.isActionAborted()){
+if (!current.isActionAborted()){
+	gs.addInfoMessage("Wählen Sie jetzt die Produkte die Sie ausleihen wollen sowie deren Anzahl");
+	gs.addInfoMessage("Klicken Sie dazu auf Edit Button unten rechts");
+}else {
 	current.bestellungstatus=null;
 }]]></script>
         <show_insert>true</show_insert>
@@ -47,7 +49,7 @@ if (current.isActionAborted()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c6009f6e97751110f7823d400153af5a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>weiter</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -55,7 +57,7 @@ if (current.isActionAborted()){
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_ui_action_c6009f6e97751110f7823d400153af5a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 03:47:00</sys_updated_on>
+        <sys_updated_on>2022-09-14 00:46:08</sys_updated_on>
         <table>x_sigh_ausleihsyst_order</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

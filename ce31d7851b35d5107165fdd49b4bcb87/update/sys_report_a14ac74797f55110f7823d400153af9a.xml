@@ -107,14 +107,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-09-12 14:09:37</sys_created_on>
         <sys_id>a14ac74797f55110f7823d400153af9a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Bestand</sys_name>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_report_a14ac74797f55110f7823d400153af9a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-12 14:56:11</sys_updated_on>
+        <sys_updated_on>2022-09-14 05:00:53</sys_updated_on>
         <table>x_sigh_ausleihsyst_equipment</table>
         <title>Bestand</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

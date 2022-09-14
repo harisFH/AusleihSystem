@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="DELETE">
+        <disabled>true</disabled>
+        <field>department</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 23:35:01</sys_created_on>
+        <sys_data_policy display_value="">52741ee39771d110f7823d400153af3b</sys_data_policy>
+        <sys_id>d125522b9771d110f7823d400153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>department</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sys_data_policy_rule_d125522b9771d110f7823d400153af37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 23:35:01</sys_updated_on>
+        <table>x_sigh_ausleihsyst_order</table>
+    </sys_data_policy_rule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</application>
+        <file_path/>
+        <instance_id>2862ec741bdba4507d9d2f8dee4bcbef</instance_id>
+        <instance_name>dev109411</instance_name>
+        <name>sys_data_policy_rule_d125522b9771d110f7823d400153af37</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule"><sys_data_policy_rule action="INSERT_OR_UPDATE"><disabled>true</disabled><field>department</field><mandatory>ignore</mandatory><sys_class_name>sys_data_policy_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 23:35:01</sys_created_on><sys_data_policy display_value="">52741ee39771d110f7823d400153af3b</sys_data_policy><sys_id>d125522b9771d110f7823d400153af37</sys_id><sys_mod_count>0</sys_mod_count><sys_name>department</sys_name><sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package><sys_policy/><sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope><sys_update_name>sys_data_policy_rule_d125522b9771d110f7823d400153af37</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 23:35:01</sys_updated_on><table>x_sigh_ausleihsyst_order</table></sys_data_policy_rule></record_update>]]></payload>
+        <payload_hash>1086641543</payload_hash>
+        <record_name>department</record_name>
+        <reverted_from/>
+        <source>76ce216697311110f7823d400153af3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 23:35:01</sys_created_on>
+        <sys_id>ad455ee79771d110f7823d400153afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833934be380000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 23:35:01</sys_updated_on>
+        <type>Data Policy Rule</type>
+        <update_guid>e5455ee7c371d110e6f2e2de445056e5</update_guid>
+        <update_guid_history>e5455ee7c371d110e6f2e2de445056e5:1086641543</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 07:57:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy_rule">sys_data_policy_rule</sys_db_object>
+        <sys_id>451f368ba3ab4204a0a18e109bd19444</sys_id>
+        <sys_metadata>d125522b9771d110f7823d400153af37</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>department</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_parent display_value="">52741ee39771d110f7823d400153af3b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_scope_delete display_value="">06a867e3abfb4b1e9756668d6ec4bb44</sys_scope_delete>
+        <sys_update_name>sys_data_policy_rule_d125522b9771d110f7823d400153af37</sys_update_name>
+        <sys_update_version display_value="sys_data_policy_rule_d125522b9771d110f7823d400153af37">ad455ee79771d110f7823d400153afe5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 07:57:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

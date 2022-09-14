@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_sigh_ausleihsyst_equipment</description>
+        <name>x_sigh_ausleihsyst_equipment</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-10 22:42:11</sys_created_on>
+        <sys_id>966c6aae97f11110f7823d400153afd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_ausleihsyst_equipment</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sys_security_acl_966c6aae97f11110f7823d400153afd9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-10 22:42:11</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</application>
+        <file_path/>
+        <instance_id>2862ec741bdba4507d9d2f8dee4bcbef</instance_id>
+        <instance_name>dev109411</instance_name>
+        <name>sys_security_acl_966c6aae97f11110f7823d400153afd9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_sigh_ausleihsyst_equipment</description><name>x_sigh_ausleihsyst_equipment</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-10 22:42:11</sys_created_on><sys_id>966c6aae97f11110f7823d400153afd9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_sigh_ausleihsyst_equipment</sys_name><sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package><sys_policy/><sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope><sys_update_name>sys_security_acl_966c6aae97f11110f7823d400153afd9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-10 22:42:11</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>2105065911</payload_hash>
+        <record_name>x_sigh_ausleihsyst_equipment</record_name>
+        <reverted_from/>
+        <source>76ce216697311110f7823d400153af3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-10 22:42:11</sys_created_on>
+        <sys_id>966c6aae97f11110f7823d400153afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18329914b140000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-10 22:42:11</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>de6c6aaec7f111104d025356fd8f8cda</update_guid>
+        <update_guid_history>de6c6aaec7f111104d025356fd8f8cda:2105065911</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 07:41:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>b54df96c242445c68b5c51c8610ceae1</sys_id>
+        <sys_metadata>966c6aae97f11110f7823d400153afd9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_ausleihsyst_equipment</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_parent display_value="x_sigh_ausleihsyst_equipment">00be696697311110f7823d400153af40</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_scope_delete display_value="">06a867e3abfb4b1e9756668d6ec4bb44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_966c6aae97f11110f7823d400153afd9</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_966c6aae97f11110f7823d400153afd9">966c6aae97f11110f7823d400153afdb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 07:41:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

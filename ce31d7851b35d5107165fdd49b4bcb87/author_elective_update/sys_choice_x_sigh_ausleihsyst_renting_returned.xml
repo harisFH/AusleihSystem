@@ -6,7 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
             <sys_created_on>2022-09-08 12:35:12</sys_created_on>
-            <sys_id>5f4ec6711b791910b342dc61ab4bcbdd</sys_id>
+            <sys_id>50be696697311110f7823d400153af82</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>returned</sys_name>
             <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -16,45 +16,5 @@
             <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
             <sys_updated_on>2022-09-08 12:35:12</sys_updated_on>
         </sys_choice_set>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>returned</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Rented</label>
-            <language>en</language>
-            <name>x_sigh_ausleihsyst_renting</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
-            <sys_created_on>2022-09-08 12:35:54</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>256e0a711b791910b342dc61ab4bcbfa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
-            <sys_updated_on>2022-09-08 12:35:54</sys_updated_on>
-            <value>0</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>returned</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Returned</label>
-            <language>en</language>
-            <name>x_sigh_ausleihsyst_renting</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>selma.ouahab@alumni.fh-aachen.de</sys_created_by>
-            <sys_created_on>2022-09-08 12:35:12</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>1b4ec6711b791910b342dc61ab4bcbdd</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>selma.ouahab@alumni.fh-aachen.de</sys_updated_by>
-            <sys_updated_on>2022-09-10 16:50:35</sys_updated_on>
-            <value>2</value>
-        </sys_choice>
     </sys_choice>
 </record_update>

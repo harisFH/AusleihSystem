@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46c8accf977d1110f7823d400153afcd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Mitarbeiter Verwalten</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_app_module_46c8accf977d1110f7823d400153afcd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-12 08:57:57</sys_updated_on>
+        <sys_updated_on>2022-09-13 19:47:37</sys_updated_on>
         <timeline_page/>
         <title>Mitarbeiter Verwalten</title>
         <uncancelable>false</uncancelable>

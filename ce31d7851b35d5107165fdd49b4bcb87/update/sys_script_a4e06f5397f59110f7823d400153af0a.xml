@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>FilterOnlyDepartmentSpecificList</name>
+        <name>FilterOnlyDepartmentSpecificEquipmenList</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,7 +27,8 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[
+(function executeRule(current, previous /*null when async*/) {
 	/*
 	Hole mir die Record Order Prüfe ob es für den Record order 
 	einträge im Cart gibt, falls nicht dann nehme die Department und 
@@ -39,6 +40,7 @@
 	grOrder.query();
 	if (grOrder.next()){
 		current.addQuery("department", grOrder.department);
+		current.addQuery("availability", 2);
 	}
 
 })(current, previous);]]></script>
@@ -48,15 +50,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a4e06f5397f59110f7823d400153af0a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>FilterOnlyDepartmentSpecificList</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>FilterOnlyDepartmentSpecificEquipmenList</sys_name>
         <sys_overrides/>
         <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
         <sys_policy/>
         <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
         <sys_update_name>sys_script_a4e06f5397f59110f7823d400153af0a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-09-13 13:12:07</sys_updated_on>
+        <sys_updated_on>2022-09-14 03:45:53</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
