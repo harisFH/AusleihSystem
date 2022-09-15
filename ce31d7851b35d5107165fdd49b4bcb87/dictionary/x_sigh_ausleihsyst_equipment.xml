@@ -8,7 +8,7 @@
             </choice>
         </element>
         <element label="Category" max_length="40" name="category" type="string"/>
-        <element label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" reference_qual="id=FHAachen^EQ" reference_qual_condition="id=FHAachen^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Department" max_length="32" name="department" reference="cmn_department" reference_qual="id=FHAachen^EQ" reference_qual_condition="id=FHAachen^EQ" type="reference"/>
         <element label="Description" max_length="100" name="description" type="string"/>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>

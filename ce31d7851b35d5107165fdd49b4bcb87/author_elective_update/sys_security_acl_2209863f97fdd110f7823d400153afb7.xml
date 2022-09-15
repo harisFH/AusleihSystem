@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_sigh_ausleihsyst_m2m_equipments_orders</name>
+        <operation display_value="add_to_list">394af8150a0a0b270096f5ac9d6bac47</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 17:20:48</sys_created_on>
+        <sys_id>2209863f97fdd110f7823d400153afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_ausleihsyst_m2m_equipments_orders</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_update_name>sys_security_acl_2209863f97fdd110f7823d400153afb7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 17:20:48</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</application>
+        <file_path/>
+        <instance_id>2862ec741bdba4507d9d2f8dee4bcbef</instance_id>
+        <instance_name>dev109411</instance_name>
+        <name>sys_security_acl_2209863f97fdd110f7823d400153afb7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x_sigh_ausleihsyst_m2m_equipments_orders</name><operation display_value="add_to_list">394af8150a0a0b270096f5ac9d6bac47</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-14 17:20:48</sys_created_on><sys_id>2209863f97fdd110f7823d400153afb7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_sigh_ausleihsyst_m2m_equipments_orders</sys_name><sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package><sys_policy/><sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope><sys_update_name>sys_security_acl_2209863f97fdd110f7823d400153afb7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-14 17:20:48</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1344874546</payload_hash>
+        <record_name>x_sigh_ausleihsyst_m2m_equipments_orders</record_name>
+        <reverted_from/>
+        <source>76ce216697311110f7823d400153af3d</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 17:20:48</sys_created_on>
+        <sys_id>e5398efb97fdd110f7823d400153af48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833d047f350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 17:20:48</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>21398efb39fdd110fd460b3522591b48</update_guid>
+        <update_guid_history>21398efb39fdd110fd460b3522591b48:1344874546</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-14 17:25:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>a951d3269cd9430491945a29273ce610</sys_id>
+        <sys_metadata>2209863f97fdd110f7823d400153afb7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_ausleihsyst_m2m_equipments_orders</sys_name>
+        <sys_package display_value="AusleihSystem" source="x_sigh_ausleihsyst">ce31d7851b35d5107165fdd49b4bcb87</sys_package>
+        <sys_parent display_value="x_sigh_ausleihsyst_m2m_equipments_orders">7cb0ce6697711110f7823d400153afc6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AusleihSystem">ce31d7851b35d5107165fdd49b4bcb87</sys_scope>
+        <sys_scope_delete display_value="">06a867e3abfb4b1e9756668d6ec4bb44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_2209863f97fdd110f7823d400153afb7</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_2209863f97fdd110f7823d400153afb7">e5398efb97fdd110f7823d400153af48</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-14 17:25:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
